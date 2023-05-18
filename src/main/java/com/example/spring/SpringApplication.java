@@ -1,16 +1,16 @@
 package com.example.spring;
-import com.example.spring.animal2.Cat;
-import com.example.spring.animal1.Dog;
+import com.example.spring.cat.Cat;
+import com.example.spring.dog.Dog;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.FilterType;
+
 @SpringBootApplication
-@ComponentScan("com.example.spring.animal1")
-//@SpringBootApplication(scanBasePackages = "com.example.spring.animal2")
-//@SpringBootApplication(scanBasePackages = {"com.example.spring.animal1", "com.example.spring.animal2"})
-//@ComponentScan({"com.example.spring.animal1", "com.example.spring.animal2"})
-//@ComponentScan(excludeFilters = @ComponentScan.Filter(type = FilterType.REGEX, pattern = {"com\\.example\\.spring\\.animal1..*","com\\.example\\.spring\\.animal2..*"}))
+@ComponentScan("com.example.spring.cat")
+//@SpringBootApplication(scanBasePackages = "com.example.spring.cat")
+//@SpringBootApplication(scanBasePackages = {"com.example.spring.cat", "com.example.spring.dog"})
+//@ComponentScan({"com.example.spring.cat", "com.example.spring.dog"})
+//@ComponentScan(excludeFilters = @ComponentScan.Filter(type = FilterType.REGEX, pattern = {"com\\.example\\.spring\\.cat..*","com\\.example\\.spring\\.dog..*"}))
 //@ComponentScan(excludeFilters = @ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE, value = {Fish.class, Dog.class}))
 public class SpringApplication {
 	public static void main(String[] args) {

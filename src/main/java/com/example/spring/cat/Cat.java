@@ -1,4 +1,4 @@
-package com.example.spring.animal2;
+package com.example.spring.cat;
 import org.springframework.stereotype.Component;
 @Component
 public class Cat {
